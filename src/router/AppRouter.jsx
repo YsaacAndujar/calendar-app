@@ -1,4 +1,4 @@
-import { Login } from 'components/auth/Login'
+import { LoginScreen } from 'components/auth/LoginScreen'
 import { CalendarScreen } from 'components/calendar/CalendarScreen'
 import React from 'react'
 import { Route, Routes, Navigate } from 'react-router-dom'
@@ -6,7 +6,7 @@ import { Route, Routes, Navigate } from 'react-router-dom'
 export const AppRouter = () => {
   return (
     <Routes>
-        <Route element={<Login/>} path='/login'/>
+        <Route element={<LoginScreen/>} path='/login'/>
         <Route element={<CalendarScreen/>} path='/'/>
         <Route path="*" element={ <Navigate to="/"/> }/>
     </Routes>
